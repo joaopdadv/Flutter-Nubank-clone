@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nubank_clone/pages/homePage.dart';
+import 'package:nubank_clone/pages/home/homePage.dart';
 
 void main() {
   runApp(const MyApp());
