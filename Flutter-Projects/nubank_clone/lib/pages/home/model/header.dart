@@ -29,15 +29,16 @@ class _HeaderState extends State<Header> {
     return GestureDetector(
       onTap: () {},
       child: Container(
-        margin: const EdgeInsets.only(left: 20, top: 15),
+        margin: const EdgeInsets.only(left: 20, top: 15, bottom: 15),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(80),
+          borderRadius: BorderRadius.circular(100),
           color: secondaryPurple,
         ),
         child: IconButton(
           onPressed: () {},
           icon: const Icon(
             MdiIcons.accountOutline,
+            color: Colors.black,
           ),
         ),
       ),

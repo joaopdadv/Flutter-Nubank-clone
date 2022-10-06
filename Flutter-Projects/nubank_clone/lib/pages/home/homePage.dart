@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:nubank_clone/pages/home/model/header.dart';
+// ignore: unused_import
 import 'package:nubank_clone/utils/colors_standard.dart';
 
 class HomePage extends StatefulWidget {
@@ -36,7 +37,7 @@ class _HomePageState extends State<HomePage> {
         preferredSize: const Size.fromHeight(0),
         child: AppBar(
           elevation: 0,
-          systemOverlayStyle: SystemUiOverlayStyle.dark,
+          systemOverlayStyle: SystemUiOverlayStyle.light,
         ));
   }
 }
