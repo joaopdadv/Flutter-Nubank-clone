@@ -17,9 +17,17 @@ class _HeaderState extends State<Header> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-            _profile(),
-          ])
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              _profile(),
+              _options(),
+            ],
+          ),
+          const SizedBox(
+            height: 32,
+          ),
+          _welcome(),
         ],
       ),
     );
@@ -29,7 +37,7 @@ class _HeaderState extends State<Header> {
     return GestureDetector(
       onTap: () {},
       child: Container(
-        margin: const EdgeInsets.only(left: 20, top: 15, bottom: 15),
+        margin: const EdgeInsets.only(left: 20, top: 15),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(100),
           color: secondaryPurple,
@@ -38,8 +46,50 @@ class _HeaderState extends State<Header> {
           onPressed: () {},
           icon: const Icon(
             MdiIcons.accountOutline,
-            color: Colors.black,
+            color: Colors.white,
           ),
+        ),
+      ),
+    );
+  }
+
+  _options() {
+    return Row(
+      children: [
+        IconButton(
+          onPressed: () {},
+          icon: const Icon(
+            MdiIcons.eyeOutline,
+            color: Colors.white,
+          ),
+        ),
+        IconButton(
+          onPressed: () {},
+          icon: const Icon(
+            MdiIcons.helpCircleOutline,
+            color: Colors.white,
+          ),
+        ),
+        IconButton(
+          onPressed: () {},
+          icon: const Icon(
+            Icons.person_add_alt_1_outlined,
+            color: Colors.white,
+          ),
+        )
+      ],
+    );
+  }
+
+  _welcome() {
+    return Container(
+      margin: const EdgeInsets.only(left: 20, bottom: 20),
+      child: const Text(
+        'Olá, João',
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
         ),
       ),
     );
