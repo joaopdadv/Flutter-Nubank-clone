@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:nubank_clone/pages/account/account.dart';
 import 'package:nubank_clone/pages/home/model/header.dart';
 // ignore: unused_import
 import 'package:nubank_clone/utils/colors_standard.dart';
@@ -25,6 +26,7 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             children: const [
               Header(),
+              Account(),
             ],
           ),
         ),
