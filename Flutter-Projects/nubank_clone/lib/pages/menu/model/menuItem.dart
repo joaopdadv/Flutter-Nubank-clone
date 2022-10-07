@@ -5,15 +5,19 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:nubank_clone/utils/colors_standard.dart';
 
 class ItemMenu extends StatelessWidget {
-  const ItemMenu(this.text, this.icon, {Key? key}) : super(key: key);
+  const ItemMenu(this.text, this.icon, this.isFirst, {Key? key})
+      : super(key: key);
 
   final String text;
   final IconData icon;
+  final bool isFirst;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 7),
+      padding: (isFirst)
+          ? const EdgeInsets.only(right: 9, left: 20)
+          : const EdgeInsets.symmetric(horizontal: 9),
       child: Column(
         children: [
           Container(
