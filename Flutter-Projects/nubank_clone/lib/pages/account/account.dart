@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:nubank_clone/controller/controller_homePage.dart';
-import 'package:nubank_clone/pages/account/model/container_text.dart';
-import 'package:nubank_clone/pages/account/model/icon_account.dart';
+
+import 'model/container_text.dart';
+import 'model/icon_account.dart';
 
 class Account extends StatefulWidget {
   const Account({Key? key}) : super(key: key);
