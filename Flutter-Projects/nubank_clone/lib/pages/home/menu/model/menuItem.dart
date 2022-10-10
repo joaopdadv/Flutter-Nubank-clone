@@ -1,7 +1,6 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:nubank_clone/utils/colors_standard.dart';
 
 class ItemMenu extends StatelessWidget {
