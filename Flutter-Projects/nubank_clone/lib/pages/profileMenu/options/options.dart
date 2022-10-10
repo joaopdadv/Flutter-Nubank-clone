@@ -14,6 +14,13 @@ class OptionsMenu extends StatelessWidget {
         children: const [
           OptionsMenuItem(MdiIcons.heartOutline, "Seguro de vida", 0),
           OptionsMenuItem(MdiIcons.bellOutline, "Notificações", 10),
+          OptionsMenuItem(MdiIcons.bankOutline, "Open Finance", 0),
+          OptionsMenuItem(MdiIcons.helpCircleOutline, "Me Ajuda", 0),
+          OptionsMenuItem(MdiIcons.accountOutline, "Editar dados do Perfil", 0),
+          OptionsMenuItem(MdiIcons.shieldOutline, "Segurança", 0),
+          OptionsMenuItem(MdiIcons.clover, "Configurar chaves Pix", 0),
+          OptionsMenuItem(MdiIcons.creditCardOutline, "Configurar cartão", 0),
+          OptionsMenuItem(MdiIcons.exitRun, "Sair do aplicativo", 0),
         ],
       ),
     );

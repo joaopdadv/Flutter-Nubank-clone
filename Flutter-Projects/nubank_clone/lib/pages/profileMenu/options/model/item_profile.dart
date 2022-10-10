@@ -33,6 +33,7 @@ class OptionsMenuItem extends StatelessWidget {
                     text,
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
+                      fontSize: 15,
                     ),
                   ),
                 ],
