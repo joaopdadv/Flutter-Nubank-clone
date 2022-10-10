@@ -17,21 +17,21 @@ class _LimiteTextState extends State<LimiteText> {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<ControllerHomePage>(
-              init: ControllerHomePage(),
-              builder: (controller) {
-                return controller.eyesValue
-                    ? Text(
-                        'Limite disponível de ${controller.getLimite()}',
-                        style: TextStyle(
-                          color: greyColor2,
-                        ),
-                      )
-                    : Text(
-                        'Limite disponível de ****',
-                        style: TextStyle(
-                          color: greyColor2,
-                        ),
-                      );
-              })
+        init: ControllerHomePage(),
+        builder: (controller) {
+          return controller.eyesValue
+              ? Text(
+                  'Limite disponível de ${controller.getLimite()}',
+                  style: TextStyle(
+                    color: greyColor2,
+                  ),
+                )
+              : Text(
+                  'Limite disponível de ****',
+                  style: TextStyle(
+                    color: greyColor2,
+                  ),
+                );
+        });
   }
 }
