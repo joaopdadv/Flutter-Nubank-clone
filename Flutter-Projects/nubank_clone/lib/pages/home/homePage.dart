@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:nubank_clone/pages/home/credit_card/credit_card.dart';
 import 'package:nubank_clone/pages/home/model/header.dart';
 import 'package:nubank_clone/pages/home/notifications/notifications.dart';
 
@@ -38,6 +39,7 @@ class _HomePageState extends State<HomePage> {
               Divider(thickness: 0.8),
               Notifications(),
               Divider(thickness: 0.8),
+              CreditCard(),
             ],
           ),
         ),
