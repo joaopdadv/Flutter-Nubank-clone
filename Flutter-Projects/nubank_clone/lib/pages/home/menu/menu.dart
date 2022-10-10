@@ -19,7 +19,7 @@ class Menu extends StatelessWidget {
               ItemMenu("Pagar", MdiIcons.barcode, false),
               ItemMenu("Transferir", MdiIcons.cash, false),
               ItemMenu("Depositar", MdiIcons.cash, false),
-              ItemMenu("Recarga", MdiIcons.creditCard, false),
+              ItemMenu("Recarga", MdiIcons.creditCardOutline, false),
               ItemMenu("Doação", MdiIcons.heartOutline, false),
               ItemMenu("Investir", MdiIcons.graph, false),
             ],

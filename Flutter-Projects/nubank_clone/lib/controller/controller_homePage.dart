@@ -6,6 +6,7 @@ class ControllerHomePage extends GetxController {
   bool eyesValue = true;
   String credito = 'R\$ 23.500,00';
   String limite = 'R\$ 6.500,00';
+  String emprestimo = 'R\$ 12.500,00';
 
   void showValue() {
     eyesValue = !eyesValue;
@@ -22,5 +23,9 @@ class ControllerHomePage extends GetxController {
 
   getLimite() {
     return limite;
+  }
+
+  getEmprestimo() {
+    return emprestimo;
   }
 }

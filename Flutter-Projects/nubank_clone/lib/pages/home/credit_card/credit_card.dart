@@ -26,7 +26,7 @@ class _CreditCardState extends State<CreditCard> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Icon(MdiIcons.creditCard),
+          const Icon(MdiIcons.creditCardOutline),
           const RowTitulo(),
           Text(
             'Fatura atual',

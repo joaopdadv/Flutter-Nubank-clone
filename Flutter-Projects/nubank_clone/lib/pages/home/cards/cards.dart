@@ -20,7 +20,7 @@ class Cards extends StatelessWidget {
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 10),
             child: const Icon(
-              MdiIcons.creditCard,
+              MdiIcons.creditCardOutline,
             ),
           ),
           const Text(
