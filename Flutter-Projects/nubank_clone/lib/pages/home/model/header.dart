@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:nubank_clone/controller/controller_homePage.dart';
+import 'package:nubank_clone/pages/profileMenu/profile.dart';
 import 'package:nubank_clone/utils/colors_standard.dart';
 
 class Header extends StatefulWidget {
@@ -45,7 +46,10 @@ class _HeaderState extends State<Header> {
           color: secondaryPurple,
         ),
         child: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const ProfilePage()));
+          },
           icon: const Icon(
             MdiIcons.accountOutline,
             color: Colors.white,

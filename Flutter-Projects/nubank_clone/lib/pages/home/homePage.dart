@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:nubank_clone/pages/home/credit_card/credit_card.dart';
 import 'package:nubank_clone/pages/home/model/header.dart';
 import 'package:nubank_clone/pages/home/notifications/notifications.dart';
+import 'package:nubank_clone/utils/app_bar_model.dart';
 
 // ignore: unused_import
 import 'package:nubank_clone/utils/colors_standard.dart';
@@ -25,7 +26,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       // backgroundColor: backgroundColor,
-      appBar: _appBar(),
+      appBar: const AppBarModel(),
       body: SingleChildScrollView(
         child: Container(
           color: Colors.white,
