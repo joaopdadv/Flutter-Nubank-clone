@@ -2,18 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:nubank_clone/utils/colors_standard.dart';
 
 class CardsNotification extends StatelessWidget {
-  const CardsNotification(this.firstText, this.purpleText, this.lastText,
+  const CardsNotification(
+      this.firstText, this.purpleText, this.lastText, this.isFirst,
       {Key? key})
       : super(key: key);
 
   final String firstText;
   final String purpleText;
   final String lastText;
+  final bool isFirst;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 10, bottom: 10, left: 20, right: 10),
+      margin: isFirst
+          ? const EdgeInsets.only(top: 10, bottom: 10, left: 20, right: 0)
+          : const EdgeInsets.only(top: 10, bottom: 10, left: 20, right: 20),
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 25),
       width: MediaQuery.of(context).size.width - 140,
       decoration: BoxDecoration(

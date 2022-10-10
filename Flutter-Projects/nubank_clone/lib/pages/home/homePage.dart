@@ -37,6 +37,7 @@ class _HomePageState extends State<HomePage> {
               Cards(),
               Divider(thickness: 0.8),
               Notifications(),
+              Divider(thickness: 0.8),
             ],
           ),
         ),

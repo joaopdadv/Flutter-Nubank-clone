@@ -14,9 +14,9 @@ class Notifications extends StatelessWidget {
           Wrap(
             children: const [
               CardsNotification(
-                  "Seu", "informe de rendimentos", "2021 já está ..."),
+                  "Seu", "informe de rendimentos", "2021 já está ...", true),
               CardsNotification(
-                  "Chegou o", "débito automático", "na fatura do ..."),
+                  "Chegou o", "débito automático", "na fatura do ...", false),
             ],
           ),
         ],
