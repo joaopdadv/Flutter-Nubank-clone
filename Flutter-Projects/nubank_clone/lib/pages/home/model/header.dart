@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:nubank_clone/controller/controller_homePage.dart';
+import 'package:nubank_clone/pages/home/model/welcome.dart';
 import 'package:nubank_clone/pages/profileMenu/profile.dart';
 import 'package:nubank_clone/utils/colors_standard.dart';
 
@@ -30,7 +31,7 @@ class _HeaderState extends State<Header> {
           const SizedBox(
             height: 32,
           ),
-          _welcome(),
+          const Welcome(true),
         ],
       ),
     );
@@ -92,20 +93,6 @@ class _HeaderState extends State<Header> {
           ),
         )
       ],
-    );
-  }
-
-  _welcome() {
-    return Container(
-      margin: const EdgeInsets.only(left: 20, bottom: 20),
-      child: const Text(
-        'Olá, João',
-        style: TextStyle(
-          color: Colors.white,
-          fontSize: 20,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
     );
   }
 }

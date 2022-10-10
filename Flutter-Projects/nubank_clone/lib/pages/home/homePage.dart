@@ -39,7 +39,6 @@ class _HomePageState extends State<HomePage> {
         color: Colors.white,
         child: Column(
           children: const [
-            Header(),
             Account(),
             Menu(),
             Cards(),
@@ -54,8 +53,15 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
     ),
-    const Text(
-      'Index 1: Business',
+    SingleChildScrollView(
+      child: Container(
+        color: Colors.white,
+        child: Column(
+          children: const [
+            Text('data'),
+          ],
+        ),
+      ),
     ),
     const Text(
       'Index 2: Business',
@@ -67,7 +73,14 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       // backgroundColor: backgroundColor,
       appBar: const AppBarModel(),
-      body: _widgetOptions.elementAt(_selectedIndex),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const Header(),
+            _widgetOptions.elementAt(_selectedIndex),
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
