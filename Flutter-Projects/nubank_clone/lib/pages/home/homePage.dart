@@ -9,6 +9,7 @@ import 'package:nubank_clone/pages/home/emprestimo/emprestimo.dart';
 import 'package:nubank_clone/pages/home/model/bank.dart';
 import 'package:nubank_clone/pages/home/model/header.dart';
 import 'package:nubank_clone/pages/home/model/investments.dart';
+import 'package:nubank_clone/pages/home/model/sales.dart';
 import 'package:nubank_clone/pages/home/notifications/notifications.dart';
 import 'package:nubank_clone/pages/home/recomendations/recomendations.dart';
 import 'package:nubank_clone/utils/app_bar_model.dart';
@@ -39,9 +40,7 @@ class _HomePageState extends State<HomePage> {
   static final List<Widget> _widgetOptions = <Widget>[
     const Bank(),
     const Investments(),
-    const Text(
-      'Index 2: Business',
-    ),
+    const Sales(),
   ];
 
   @override
