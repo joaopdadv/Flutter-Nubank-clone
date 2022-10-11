@@ -6,11 +6,16 @@ import 'package:nubank_clone/pages/home/model/welcome.dart';
 import 'package:nubank_clone/pages/profileMenu/profile.dart';
 import 'package:nubank_clone/utils/colors_standard.dart';
 
-class Header extends StatelessWidget {
+class Header extends StatefulWidget {
   const Header(this.show, {Key? key}) : super(key: key);
 
   final bool show;
 
+  @override
+  State<Header> createState() => _HeaderState();
+}
+
+class _HeaderState extends State<Header> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -21,21 +26,21 @@ class Header extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              _profile(),
+              _profile(context),
               _options(),
             ],
           ),
           const SizedBox(
             height: 20,
           ),
-          Welcome(show),
+          Welcome(widget.show),
         ],
       ),
     );
   }
 }
 
-_profile() {
+_profile(context) {
   return GestureDetector(
     onTap: () {},
     child: Container(
@@ -46,8 +51,12 @@ _profile() {
       ),
       child: IconButton(
         onPressed: () {
-          // Navigator.push(context,
-          //     MaterialPageRoute(builder: (context) => const ProfilePage()));
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const ProfilePage(),
+            ),
+          );
         },
         icon: const Icon(
           MdiIcons.accountOutline,

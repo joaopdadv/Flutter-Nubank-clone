@@ -7,6 +7,9 @@ class ControllerHomePage extends GetxController {
   String credito = 'R\$ 23.500,00';
   String limite = 'R\$ 6.500,00';
   String emprestimo = 'R\$ 12.500,00';
+  String caixinhasTotal = 'R\$ 500,00';
+  String investimentos = 'R\$ 3000,00';
+  String cripto = 'R\$ 0,00';
 
   void showValue() {
     eyesValue = !eyesValue;
@@ -27,5 +30,17 @@ class ControllerHomePage extends GetxController {
 
   getEmprestimo() {
     return emprestimo;
+  }
+
+  getCaixinhasTotal() {
+    return caixinhasTotal;
+  }
+
+  getInvestimentos() {
+    return investimentos;
+  }
+
+  getCripto() {
+    return cripto;
   }
 }

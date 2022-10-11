@@ -6,7 +6,9 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:nubank_clone/pages/home/assistent/assistent.dart';
 import 'package:nubank_clone/pages/home/credit_card/credit_card.dart';
 import 'package:nubank_clone/pages/home/emprestimo/emprestimo.dart';
+import 'package:nubank_clone/pages/home/model/bank.dart';
 import 'package:nubank_clone/pages/home/model/header.dart';
+import 'package:nubank_clone/pages/home/model/investments.dart';
 import 'package:nubank_clone/pages/home/notifications/notifications.dart';
 import 'package:nubank_clone/pages/home/recomendations/recomendations.dart';
 import 'package:nubank_clone/utils/app_bar_model.dart';
@@ -35,37 +37,8 @@ class _HomePageState extends State<HomePage> {
   }
 
   static final List<Widget> _widgetOptions = <Widget>[
-    SingleChildScrollView(
-      child: Container(
-        color: Colors.white,
-        child: Column(
-          children: const [
-            Account(),
-            Menu(),
-            Cards(),
-            Notifications(),
-            Divider(thickness: 0.8),
-            CreditCard(),
-            Divider(thickness: 0.8),
-            Assistent(),
-            Divider(thickness: 0.8),
-            Emprestimo(),
-            Divider(thickness: 0.8),
-            Recomendations(),
-          ],
-        ),
-      ),
-    ),
-    SingleChildScrollView(
-      child: Container(
-        color: Colors.white,
-        child: Column(
-          children: const [
-            Text('data'),
-          ],
-        ),
-      ),
-    ),
+    const Bank(),
+    const Investments(),
     const Text(
       'Index 2: Business',
     ),
