@@ -22,7 +22,7 @@ class _FaturaState extends State<Fatura> {
           margin: const EdgeInsets.symmetric(vertical: 10),
           child: controller.eyesValue
               ? Text(
-                  controller.getCredito(),
+                  controller.credito,
                   style: const TextStyle(
                     fontSize: 23,
                     fontWeight: FontWeight.bold,

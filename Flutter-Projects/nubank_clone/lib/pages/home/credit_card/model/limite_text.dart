@@ -21,7 +21,7 @@ class _LimiteTextState extends State<LimiteText> {
         builder: (controller) {
           return controller.eyesValue
               ? Text(
-                  'Limite disponível de ${controller.getLimite()}',
+                  'Limite disponível de ${controller.limite}',
                   style: TextStyle(
                     color: greyColor2,
                   ),

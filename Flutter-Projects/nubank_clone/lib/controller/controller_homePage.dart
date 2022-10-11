@@ -15,32 +15,4 @@ class ControllerHomePage extends GetxController {
     eyesValue = !eyesValue;
     update();
   }
-
-  String getSaldo() {
-    return saldo;
-  }
-
-  getCredito() {
-    return credito;
-  }
-
-  getLimite() {
-    return limite;
-  }
-
-  getEmprestimo() {
-    return emprestimo;
-  }
-
-  getCaixinhasTotal() {
-    return caixinhasTotal;
-  }
-
-  getInvestimentos() {
-    return investimentos;
-  }
-
-  getCripto() {
-    return cripto;
-  }
 }

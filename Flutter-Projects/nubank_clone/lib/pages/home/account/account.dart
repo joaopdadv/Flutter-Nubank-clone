@@ -31,7 +31,7 @@ class _MyWidgetState extends State<Account> {
                 ],
               ),
               controllerHomePage.eyesValue
-                  ? AccountText(controllerHomePage.getSaldo(), 23, 0, 15)
+                  ? AccountText(controllerHomePage.saldo, 23, 0, 15)
                   : const AccountText('****', 23, 0, 15),
             ],
           );

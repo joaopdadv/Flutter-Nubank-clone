@@ -53,7 +53,7 @@ class _EmprestimoState extends State<Emprestimo> {
                     ),
                     controller.eyesValue
                         ? Text(
-                            "${controller.getEmprestimo()}",
+                            controller.emprestimo,
                             style: TextStyle(color: greyColor2),
                           )
                         : Text(
