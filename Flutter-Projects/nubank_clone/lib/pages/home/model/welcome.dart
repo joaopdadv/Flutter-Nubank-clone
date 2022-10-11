@@ -10,16 +10,23 @@ class Welcome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ola
-        ? Container(
-            margin: const EdgeInsets.only(left: 20, bottom: 20),
-            child: const Text(
-              'Olá, João',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
+        ? Column(
+            children: [
+              const SizedBox(
+                height: 12,
               ),
-            ),
+              Container(
+                margin: const EdgeInsets.only(left: 20, bottom: 20),
+                child: const Text(
+                  'Olá, João',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
           )
         : Container();
   }

@@ -8,6 +8,7 @@ import 'package:nubank_clone/pages/home/credit_card/credit_card.dart';
 import 'package:nubank_clone/pages/home/emprestimo/emprestimo.dart';
 import 'package:nubank_clone/pages/home/model/header.dart';
 import 'package:nubank_clone/pages/home/notifications/notifications.dart';
+import 'package:nubank_clone/pages/home/recomendations/recomendations.dart';
 import 'package:nubank_clone/utils/app_bar_model.dart';
 
 // ignore: unused_import
@@ -49,6 +50,8 @@ class _HomePageState extends State<HomePage> {
             Assistent(),
             Divider(thickness: 0.8),
             Emprestimo(),
+            Divider(thickness: 0.8),
+            Recomendations(),
           ],
         ),
       ),
@@ -76,7 +79,7 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const Header(),
+            _selectedIndex == 0 ? const Header(true) : const Header(false),
             _widgetOptions.elementAt(_selectedIndex),
           ],
         ),
