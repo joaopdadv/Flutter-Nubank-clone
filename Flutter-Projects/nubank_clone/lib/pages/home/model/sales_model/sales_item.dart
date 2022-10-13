@@ -5,7 +5,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:nubank_clone/utils/colors_standard.dart';
 
 class SalesItem extends StatelessWidget {
-  const SalesItem(this.text, this.loja, this.image, {Key? key})
+  const SalesItem(this.loja, this.text, this.image, {Key? key})
       : super(key: key);
 
   final String loja;
@@ -17,8 +17,8 @@ class SalesItem extends StatelessWidget {
     return Container(
       child: Row(children: [
         Container(
-          width: 50,
-          height: 50,
+          width: 60,
+          height: 60,
           margin: const EdgeInsets.all(20),
           child: Container(
             height: 160,
@@ -34,8 +34,25 @@ class SalesItem extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(loja),
-            Text(text),
+            Container(
+              margin: const EdgeInsets.only(bottom: 5),
+              child: Text(
+                loja,
+                style: const TextStyle(
+                  fontSize: 16,
+                ),
+              ),
+            ),
+            SizedBox(
+              width: 150,
+              child: Text(
+                text,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                ),
+              ),
+            ),
           ],
         )
       ]),
