@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:nubank_clone/pages/home/recomendations/model/dercubra_card.dart';
 
 class Recomendations extends StatelessWidget {

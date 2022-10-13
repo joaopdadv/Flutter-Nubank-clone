@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get_state_manager/src/simple/get_state.dart';
 
 import '../../../../controller/controller_homePage.dart';

@@ -1,6 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:nubank_clone/pages/home/model/sales_model/sales_component.dart';
 import 'package:nubank_clone/pages/home/model/sales_model/sales_item.dart';
 

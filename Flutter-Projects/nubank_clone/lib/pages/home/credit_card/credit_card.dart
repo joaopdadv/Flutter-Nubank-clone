@@ -1,10 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:get/get_state_manager/src/simple/get_state.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:nubank_clone/controller/controller_homePage.dart';
 import 'package:nubank_clone/pages/home/credit_card/model/row_titulo.dart';
 import 'package:nubank_clone/pages/home/credit_card/model/valor_fatura.dart';
 import 'package:nubank_clone/utils/colors_standard.dart';

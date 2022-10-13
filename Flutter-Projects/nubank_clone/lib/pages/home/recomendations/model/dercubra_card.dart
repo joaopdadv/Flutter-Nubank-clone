@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:nubank_clone/utils/colors_standard.dart';
 
 class DiscoveryCard extends StatelessWidget {
@@ -47,18 +45,14 @@ class DiscoveryCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
-                    child: Text(
-                      title,
-                      style: const TextStyle(
-                          fontWeight: FontWeight.bold, fontSize: 15),
-                    ),
+                  Text(
+                    title,
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 15),
                   ),
-                  Container(
-                    child: Text(
-                      text,
-                      style: TextStyle(color: greyColor2, fontSize: 15),
-                    ),
+                  Text(
+                    text,
+                    style: TextStyle(color: greyColor2, fontSize: 15),
                   ),
                   Container(
                     padding: const EdgeInsets.only(bottom: 10),
