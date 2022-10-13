@@ -31,35 +31,31 @@ class _SalesComponentState extends State<SalesComponent> {
       }
     }
 
-    return Container(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            padding: const EdgeInsets.only(left: 20, top: 30),
-            child: Text(
-              widget.title,
-              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-            ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Container(
+          padding: const EdgeInsets.only(left: 20, top: 30),
+          child: Text(
+            widget.title,
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
           ),
-          Container(
-            child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [...promoPar],
-                  ),
-                  Row(
-                    children: [...promoImpar],
-                  ),
-                ],
+        ),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [...promoPar],
               ),
-            ),
+              Row(
+                children: [...promoImpar],
+              ),
+            ],
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
