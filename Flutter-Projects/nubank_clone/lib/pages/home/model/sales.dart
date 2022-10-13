@@ -13,7 +13,24 @@ class Sales extends StatelessWidget {
       child: Container(
         child: Column(
           children: const [
-            SalesComponent("Tem de tudo", ['teste', 'teste2', 'www.com.br']),
+            SalesComponent("Tem de tudo", [
+              SalesItem('teste', 'teste2',
+                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+              SalesItem('teste', 'teste2',
+                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+              SalesItem('teste', 'teste2',
+                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+              SalesItem('teste', 'teste2',
+                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+              SalesItem('teste', 'teste2',
+                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+              SalesItem('teste', 'teste2',
+                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+              SalesItem('teste', 'teste2',
+                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+              SalesItem('teste', 'teste2',
+                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+            ]),
           ],
         ),
       ),
